@@ -1,0 +1,81 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "kumbh sans", sans-serif;
+  margin-top: 5%;
+  background-color: aqua;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw 50vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-top: 8%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.flex .card {
+  border-radius: 5%;
+  background-color: white;
+  margin-top: 5%;
+  width: 326px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px black;
+}
+.flex .card .card-header {
+  width: 100%;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+}
+.flex .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex .card .card-body .foto {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin-top: -120px;
+  background-color: white;
+}
+.flex .card .card-body .city, .flex .card .card-body .stat {
+  color: #c2c2bb;
+  margin-top: 5%;
+}
+.flex .card .card-body .nombre {
+  text-transform: uppercase;
+}
+.flex .card .card-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+.flex .card .card-footer .card-footer-social {
+  margin-bottom: 1rem;
+  border-top: 1px solid #eeeee4;
+  text-align: center;
+  margin-right: 5%;
+}
+.flex .card .card-footer .card-footer-social .followers {
+  color: #c2c2bb;
+}
